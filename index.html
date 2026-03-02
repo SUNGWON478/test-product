@@ -10,18 +10,34 @@
     <div class="container">
         <h1>기니피그를 눌러보세요!</h1>
         <div id="guinea-pig" class="pig">
-            <!-- 기니피그 모양의 SVG -->
-            <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
-                <ellipse cx="100" cy="70" rx="80" ry="45" fill="#C4A484" /> <!-- 몸통 -->
-                <ellipse cx="40" cy="60" rx="25" ry="20" fill="#C4A484" /> <!-- 머리 -->
-                <circle cx="30" cy="55" r="3" fill="black" /> <!-- 눈 -->
-                <path d="M 35 70 Q 40 75 45 70" stroke="black" fill="transparent" /> <!-- 입 -->
-                <ellipse cx="50" cy="40" rx="8" ry="12" fill="#E1C699" transform="rotate(-20 50 40)" /> <!-- 귀 -->
-                <ellipse cx="160" cy="100" rx="10" ry="5" fill="#E1C699" /> <!-- 발 -->
-                <ellipse cx="80" cy="105" rx="10" ry="5" fill="#E1C699" /> <!-- 발 -->
-            </svg>
+            <!-- 배경 없는 실사 기니피그 이미지 -->
+            <img src="https://static.vecteezy.com/system/resources/previews/024/230/171/original/guinea-pig-transparent-background-free-png.png" alt="귀여운 기니피그">
         </div>
         <p class="instruction">눌러서 소리를 들어보세요 🐹</p>
+
+        <div class="comments-section">
+            <hr>
+            <h3>💬 댓글 남기기</h3>
+            <div id="disqus_thread"></div>
+            <script>
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                /*
+                var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                */
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://test-product-2.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </div>
 
         <div class="contact-section">
             <hr>

@@ -4,10 +4,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #fdf5e6;
     font-family: 'Arial', sans-serif;
-    overflow: hidden;
+    padding: 2rem 0;
 }
 
 .container {
@@ -20,24 +20,40 @@ h1 {
 }
 
 .pig {
-    width: 300px;
+    width: 350px;
+    min-height: 200px;
     margin: 0 auto;
     cursor: pointer;
     transition: transform 0.1s;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pig img {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.15));
+    display: block;
 }
 
 .pig:active {
     transform: scale(0.95);
 }
 
-.pig svg {
-    filter: drop-shadow(0 5px 15px rgba(0,0,0,0.1));
-}
-
 .instruction {
     margin-top: 1.5rem;
     color: #5d4037;
     font-size: 1.2rem;
+}
+
+.comments-section {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contact-section {

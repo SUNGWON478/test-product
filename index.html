@@ -3,10 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fresh Start</title>
+    <title>저희 결혼합니다 💍</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 구글 폰트: 나눔 명조 (감성적인 서체) -->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>새로운 시작입니다!</h1>
-    <p>어떤 것을 만들어 드릴까요? 🐹✨</p>
+    <div class="invitation-container">
+        <!-- 메인 커버 섹션 -->
+        <section class="section main-cover">
+            <div class="fade-in">
+                <p class="date-top">2026. 05. 23. SAT PM 12:30</p>
+                <h1 class="names">성원 & 영란</h1>
+                <div class="main-photo">
+                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=800" alt="웨딩 메인 사진">
+                </div>
+                <p class="location-top">그랜드 컨벤션 웨딩홀 1층</p>
+            </div>
+        </section>
+
+        <!-- 인사말 섹션 -->
+        <section class="section intro">
+            <div class="fade-in">
+                <h2 class="section-title">소중한 분들을 초대합니다</h2>
+                <div class="intro-text">
+                    <p>서로가 마주보며 다져온 사랑을</p>
+                    <p>이제 곁에서 함께 걸어가려 합니다.</p>
+                    <p>저희의 새로운 시작을 축복해 주시면</p>
+                    <p>더없는 기쁨으로 간직하겠습니다.</p>
+                </div>
+                <div class="parents">
+                    <p><span>성진 · 미숙</span> 의 장남 <strong>성원</strong></p>
+                    <p><span>영수 · 정혜</span> 의 장녀 <strong>영란</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 일시 및 달력 섹션 -->
+        <section class="section calendar-section">
+            <div class="fade-in">
+                <h2 class="section-title">WEDDING DAY</h2>
+                <div class="calendar">
+                    <div class="calendar-header">2026. 05</div>
+                    <div class="calendar-days">
+                        <span>일</span><span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span>토</span>
+                        <span></span><span></span><span></span><span></span><span></span><span>1</span><span>2</span>
+                        <span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span>
+                        <span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span>
+                        <span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span class="wedding-day">23</span>
+                        <span>24</span><span>25</span><span>26</span><span>27</span><span>28</span><span>29</span><span>30</span>
+                        <span>31</span>
+                    </div>
+                </div>
+                <div id="countdown" class="countdown">
+                    D-Day까지 <span id="days">0</span>일 남았습니다
+                </div>
+            </div>
+        </section>
+
+        <!-- 오시는 길 섹션 -->
+        <section class="section map-section">
+            <div class="fade-in">
+                <h2 class="section-title">LOCATION</h2>
+                <p class="hall-name">그랜드 컨벤션 웨딩홀</p>
+                <p class="address">서울특별시 강남구 테헤란로 123</p>
+                <div class="map-placeholder">
+                    <!-- 실제 구글 맵이나 카카오 맵 API를 연결할 수 있는 영역 -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.111818228198!2d127.02544521531034!3d37.500411879809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca15a31776953%3A0xc3f8379435f3d3d5!2z7Zmp6rWs6rWQ7LCo66GcIDM5!5e0!3m2!1sko!2skr!4v1625450000000!5m2!1sko!2skr" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- 연락하기 섹션 -->
+        <section class="section contact">
+            <div class="fade-in">
+                <h2 class="section-title">CONTACT</h2>
+                <div class="btn-group">
+                    <a href="tel:01012345678" class="btn">신랑에게 전화하기</a>
+                    <a href="tel:01087654321" class="btn outline">신부에게 전화하기</a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>© 2026 성원 & 영란. All Rights Reserved.</p>
+        </footer>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>

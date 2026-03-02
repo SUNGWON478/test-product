@@ -6,20 +6,20 @@ body {
     align-items: center;
     min-height: 100vh;
     background-color: #fdf5e6;
-    /* 기니피그 픽셀 패턴 배경 추가 */
-    background-image: url('https://openclipart.org/image/2400px/svg_to_png/216345/guinea-pig.png');
-    background-size: 80px; /* 패턴 크기 조절 */
+    /* 기니피그 캐릭터 패턴 배경 추가 */
+    background-image: url('pig.png');
+    background-size: 60px; /* 캐릭터 크기에 맞춰 조절 */
     background-repeat: repeat;
     font-family: 'Arial', sans-serif;
     padding: 2rem 0;
     /* 오른쪽에서 왼쪽으로 흐르는 애니메이션 적용 */
-    animation: moveBackground 15s linear infinite;
+    animation: moveBackground 20s linear infinite;
 }
 
 /* 배경 이동 애니메이션 정의 */
 @keyframes moveBackground {
     from { background-position: 0 0; }
-    to { background-position: -320px 0; } /* 패턴 크기의 배수로 설정하여 매끄럽게 연결 */
+    to { background-position: -240px 0; } /* 패턴 크기의 배수로 설정하여 매끄럽게 연결 */
 }
 
 /* 배경이 너무 진할 경우 콘텐츠를 돋보이게 하기 위한 컨테이너 배경 추가 */

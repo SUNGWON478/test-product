@@ -1,1 +1,59 @@
-/* Add styles here */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F5DEB3;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #8B4513;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+main {
+    padding: 1rem;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+h2 {
+    font-family: 'Georgia', serif;
+    color: #8B4513;
+}
+
+button {
+    background-color: #228B22;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3CB371;
+}
+
+footer {
+    background-color: #8B4513;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

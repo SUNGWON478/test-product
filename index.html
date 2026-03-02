@@ -1,48 +1,43 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All About Guinea Pigs</title>
+    <title>기니피그 꽥꽥!</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>All About Guinea Pigs</h1>
-        <img src="https://place-hold.it/800x300" alt="Guinea Pig">
-    </header>
-    <main>
-        <section id="introduction">
-            <h2>Introduction to Guinea Pigs</h2>
-            <p>Guinea pigs, also known as cavies, are gentle and social animals that make wonderful pets. They are known for their charming personalities and their love of fresh vegetables.</p>
-        </section>
-        <section id="diet">
-            <h2>Diet</h2>
-            <p>A healthy guinea pig diet consists of high-quality hay, fresh vegetables, and a limited amount of pellets. It's important to provide a constant supply of fresh water.</p>
-        </section>
-        <section id="habitat">
-            <h2>Habitat</h2>
-            <p>Guinea pigs need a spacious and clean cage with a soft bedding material. They thrive in a temperature-controlled environment and enjoy having toys and tunnels to explore.</p>
-        </section>
-        <section id="care">
-            <h2>Care</h2>
-            <p>Regular grooming, nail trimming, and health check-ups are essential for a guinea pig's well-being. They are social animals and do best with at least one other guinea pig companion.</p>
-        </section>
-        <section id="fun-facts">
-            <h2>Fun Facts</h2>
-            <ul>
-                <li>Guinea pigs are not from Guinea and are not related to pigs.</li>
-                <li>They are born with their eyes open and a full coat of fur.</li>
-                <li>Guinea pigs "popcorn" when they are happy, which is a series of small jumps and twists.</li>
-            </ul>
-            <button id="fun-fact-button">Show a Fun Fact!</button>
-            <p id="fun-fact-display"></p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Guinea Pig Information Site. All rights reserved.</p>
-    </footer>
+    <div class="container">
+        <h1>기니피그를 눌러보세요!</h1>
+        <div id="guinea-pig" class="pig">
+            <!-- 기니피그 모양의 SVG -->
+            <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="100" cy="70" rx="80" ry="45" fill="#C4A484" /> <!-- 몸통 -->
+                <ellipse cx="40" cy="60" rx="25" ry="20" fill="#C4A484" /> <!-- 머리 -->
+                <circle cx="30" cy="55" r="3" fill="black" /> <!-- 눈 -->
+                <path d="M 35 70 Q 40 75 45 70" stroke="black" fill="transparent" /> <!-- 입 -->
+                <ellipse cx="50" cy="40" rx="8" ry="12" fill="#E1C699" transform="rotate(-20 50 40)" /> <!-- 귀 -->
+                <ellipse cx="160" cy="100" rx="10" ry="5" fill="#E1C699" /> <!-- 발 -->
+                <ellipse cx="80" cy="105" rx="10" ry="5" fill="#E1C699" /> <!-- 발 -->
+            </svg>
+        </div>
+        <p class="instruction">눌러서 소리를 들어보세요 🐹</p>
+
+        <div class="contact-section">
+            <hr>
+            <h3>🤝 제휴 문의</h3>
+            <form action="https://formspree.io/f/mykdqyze" method="POST" class="contact-form">
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="이메일 주소를 입력하세요" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="문의 내용을 입력해주세요" required></textarea>
+                </div>
+                <button type="submit">문의 보내기</button>
+            </form>
+        </div>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
+

@@ -1,59 +1,105 @@
-
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #F5DEB3;
-    color: #333;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fdf5e6;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
 }
 
-header {
-    background-color: #8B4513;
-    color: white;
+.container {
     text-align: center;
-    padding: 1rem;
 }
 
-header img {
-    max-width: 100%;
-    height: auto;
+h1 {
+    color: #8b4513;
+    margin-bottom: 2rem;
 }
 
-main {
-    padding: 1rem;
-}
-
-section {
-    background-color: white;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    border-radius: 8px;
-}
-
-h2 {
-    font-family: 'Georgia', serif;
-    color: #8B4513;
-}
-
-button {
-    background-color: #228B22;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
+.pig {
+    width: 300px;
+    margin: 0 auto;
     cursor: pointer;
+    transition: transform 0.1s;
 }
 
-button:hover {
-    background-color: #3CB371;
+.pig:active {
+    transform: scale(0.95);
 }
 
-footer {
-    background-color: #8B4513;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    position: relative;
-    bottom: 0;
+.pig svg {
+    filter: drop-shadow(0 5px 15px rgba(0,0,0,0.1));
+}
+
+.instruction {
+    margin-top: 1.5rem;
+    color: #5d4037;
+    font-size: 1.2rem;
+}
+
+.contact-section {
+    margin-top: 3rem;
+    padding-top: 1rem;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #dcc6b0;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    color: #8b4513;
+    margin-bottom: 1rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.form-group input, .form-group textarea {
     width: 100%;
+    padding: 10px;
+    border: 1px solid #c4a484;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background: #fff;
+    font-size: 0.9rem;
+}
+
+.form-group textarea {
+    height: 80px;
+    resize: none;
+}
+
+button[type="submit"] {
+    background-color: #8b4513;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+button[type="submit"]:hover {
+    background-color: #5d4037;
+}
+
+/* 통통 튀는 애니메이션 */
+@keyframes bounce {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+.bounce {
+    animation: bounce 0.3s ease-in-out;
 }
